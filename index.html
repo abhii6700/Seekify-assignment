@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./assets/revvLogoWhite.png" type="image/x-icon">
+    <title>Revv</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <header id="header">
+      <div id="Logo">
+        <img src="./revv-logo.jpg" alt="" />
+      </div>
+      <nav class="options">
+        <a><button>Hyundai Subscription</button></a>
+        <a><button>Mahendra Subscription</button></a>
+        <a>car subscription</a>
+        <a>How it works</a>
+        <a>FAQs</a>
+        <a>Login or SignUp</a>
+      </nav>
+    </header>
+
+<!--HEADER FOR MOBILE-->
+
+<div id="header-mobile">
+<div class="open-menu">
+    <a onclick="showNavBar()"><img src="./assets/hamburger-menu-icon.png" alt=""></a>
+</div>
+<img src="./assets/revvLogoWhite.png" alt="">
+<span></span>
+</div>
+
+<div id="nav-mobile">
+    <div class="login-or-signup">
+        <h3>Login or Signup</h3>
+    </div>
+    <div class="options">
+        <a href="">Car Rental</a>
+        <a href="">Car Subscription</a>
+        <a href="">Hyundai Subscription</a>
+        <a href="">Mahindra Subscription</a>
+        <a href="">Tariff - Car Rental</a>
+        <a href="">FAQ</a>
+        <a href="">Policy - Car Rental</a>
+    </div>
+</div>
+
+    <!--HERO SECTION -->
+
+    <div
+      id="banner"
+      style="background-image: url('./banner bg.svg'); background-size: cover"
+    >
+      <div class="banner-container">
+        <div class="vector">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img
+                src="./assets/hero section/banner 1.png"
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="mySlides fade">
+              <img
+                src="./assets/hero section/banner 2.png"
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="mySlides fade">
+              <img
+                src="./assets/hero section/banner 3.png"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--SELECT CITY AND DATE-->
+
+    <div id="container">
+      <div id="rentals-and-subscriptions">
+        <div class="selectors">
+          <button>Rentals</button>
+          <button>Subscriptions</button>
+        </div>
+        <div class="title">
+          <h1>Rentals</h1>
+          <p>Self drive car rentals in India</p>
+        </div>
+        <div id="select-city-and-date">
+          <select>
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="pune">Pune</option>
+            <option value="bangalore">Bangalore</option>
+          </select>
+          <div>
+            <label for="start-date">Start Date</label>
+            <input type="date" id="start-date" name="start-date" />
+          </div>
+          <div>
+            <label for="end-date">End Date</label>
+            <input type="date" id="end-date" name="end-date" />
+          </div>
+
+          <button class="search-button">Search</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SANITIZED AND SAFE CARS-->
+
+    <div id="sanitized-and-safe-cars">
+      <div class="title">
+        <h2>Sanitized & safe cars</h2>
+        <div class="button-container">
+          <button><</button>
+          <button>></button>
+        </div>
+      </div>
+      <div class="banners">
+        <img
+          class="banner"
+          src="./assets/sanitized and safe cars/banner-sanitised01.png"
+          alt=""
+        />
+        <img
+          class="banner"
+          src="./assets/sanitized and safe cars/banner-sanitised02.png"
+          alt=""
+        />
+        <img
+          class="banner"
+          src="./assets/sanitized and safe cars/banner-sanitised03.png"
+          alt=""
+        />
+        <img
+          class="banner"
+          src="./assets/sanitized and safe cars/mask-group125.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- FEATURED -->
+
+    <div id="featured">
+      <div class="title">
+        <h2>Sanitized & safe cars</h2>
+        <div class="button-container">
+          <button><</button>
+          <button>></button>
+        </div>
+      </div>
+      <div class="banners">
+        <img
+          class="banner"
+          src="./assets/featured/Desktop_Banner_01_Hyundai_Subscription.png"
+          alt=""
+        />
+        <img
+          class="banner"
+          src="./assets/featured/Desktop_Banner_02_Mahindra_Subscription.png"
+          alt=""
+        />
+        <img
+          class="banner"
+          src="./assets/featured/Desktop_Banner_01_testimonial.png"
+          alt=""
+        />
+        <img
+          class="banner"
+          src="./assets/featured/Desktop_Banner_02_testimonial.png"
+          alt=""
+        />
+        <img
+          class="banner"
+          src="./assets/featured/desktop-banner-03-testimonial.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- HOW IT WORKS -->
+
+    <div id="how-it-works">
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="image-container">
+            <img src="./assets/how it works/credit-card.png" alt="" />
+          </div>
+
+          <div class="description">
+            <h3>Book & Pay</h3>
+            <p>Pick your favourite car, time and place</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="image-container">
+            <img src="./assets/how it works/car-icons.png" alt="" />
+          </div>
+
+          <div class="description">
+            <h3>Receive</h3>
+            <p>We will deliver the car to your doorstep</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="image-container">
+            <img src="./assets/how it works/wheel.png" alt="" />
+          </div>
+
+          <div class="description">
+            <h3>Drive</h3>
+            <p>Enjoy your Revv self drive</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="image-container">
+            <img src="./assets/how it works/rotate-img.png" alt="" />
+          </div>
+
+          <div class="description">
+            <h3>Return</h3>
+            <p>
+              Get the car back to your preferred return location, and we will
+              take it from there
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DOWNLOAD THE REVV APP -->
+
+    <div id="download-revv">
+        <h2>Download The Revv App</h2>
+        <div class="download-rev-content-wrapper">
+            <div class="mobile-images">
+                <img src="./assets/mobile images/mobile-img-03.png" alt="">
+                <img src="./assets/mobile images/mobile-img-01.webp" alt="">
+            </div>
+            <div class="available-on">
+                <h2>Available On</h2>
+              <img src="./assets/appstore.png" alt="">
+             
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- OUR JOURNEY SO FAR -->
+
+    <div id="achievements">
+        <h2>Our Journey so far</h2>
+        <div class="achievements-container">
+            <div class="achievement">
+                <div class="img-container">
+                    <img src="./assets/our journey/ic-happy-cus.svg" alt="">
+                </div>
+                <div class="description">
+                    <h3>1Mn+</h3>
+                    <p>Happy Revvers</p>
+                </div>
+            </div>
+            <div class="achievement">
+                <div class="img-container">
+                    <img src="./assets/our journey/ic-across-india.svg" alt="">
+                </div>
+                <div class="description">
+                    <h3>22+ Cities</h3>
+                    <p>Across India</p>
+                </div>
+            </div>
+            <div class="achievement">
+                <div class="img-container">
+                    <img src="./assets/our journey/ic-subscription.svg" alt="">
+                </div>
+                <div class="description">
+                    <h3>50Mn+</h3>
+                    <p>Kms Travelled</p>
+                </div>
+            </div>
+            <div class="achievement">
+                <div class="img-container">
+                    <img src="./assets/our journey/ic-customer-rating.svg" alt="">
+                </div>
+                <div class="description">
+                    <h3>4.8 / 5</h3>
+                    <p>20k+ reviewers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TESTIMONIAL -->
+    <div id="testimonial">
+        <h2>What our Customers are saying</h2>
+        <div class="reviews">
+            <div class="review">
+                <div class="heading">
+                    <div>
+                        <div class="rating">
+                            <img class="star" src="./assets/ratingStart.png">
+                            <img class="star" src="./assets/ratingStart.png">
+                            <img class="star" src="./assets/ratingStart.png">
+                            <img class="star" src="./assets/ratingStart.png">
+                            <img class="star" src="./assets/ratingStart.png">
+                        </div>
+                        <div class="customer-name">
+                            <h3>Abhishek Yadav</h3>
+                        </div>
+                    </div>
+                    <img src="./assets/noun-quote.png" alt="" style="height: 50px;">
+                </div>
+               <div class="review-content">
+                   <p>This is my first experience of hiring Revv car. And I am really happy with the services I received from Revv. 1. The car I received was brand new. 2. Totally cleaned. 3. No issues with car pickup, no engine noise. 4. AC and music system was really good. In total it was a highly comfortable travel. Thanks, Revv. Highly recommended.</p>
+               </div>
+            </div>
+            <div class="review">
+                <div class="heading">
+                    <div>
+                        <div class="rating">
+                            <img class="star" src="./assets/ratingStart.png">
+                            <img class="star" src="./assets/ratingStart.png">
+                            <img class="star" src="./assets/ratingStart.png">
+                            <img class="star" src="./assets/ratingStart.png">
+                            <img class="star" src="./assets/ratingStart.png">
+                        </div>
+                        <div class="customer-name">
+                            <h3>John Cena</h3>
+                        </div>
+                    </div>
+                    <img src="./assets/noun-quote.png" alt="" style="height: 50px;">
+                </div>
+               <div class="review-content">
+                   <p>I have used Revv app for my first car driving experience from Chandigarh for 5 days. The car was absolutely clean and tidy, the delivery executives were right on time for delivering the car and even during return. The car was in very good condition and enjoyed the experience with Revv. I would strongly recommend anyone to use Revv wherever possible.</p>
+               </div>
+            </div>
+            <div class="review">
+                <div class="heading">
+                    <div>
+                        <div class="rating">
+                            <img class="star" src="./assets/ratingStart.png">
+                            <img class="star" src="./assets/ratingStart.png">
+                            <img class="star" src="./assets/ratingStart.png">
+                            <img class="star" src="./assets/ratingStart.png">
+                            <img class="star" src="./assets/ratingStart.png">
+                        </div>
+                        <div class="customer-name">
+                            <h3>Bhanu Kushwah</h3>
+                        </div>
+                    </div>
+                    <img src="./assets/noun-quote.png" alt="" style="height: 50px;">
+                </div>
+               <div class="review-content">
+                   <p>Self Drive cars are new to me, I was not so comfortable with the idea. However, after using the services of Revv, I am satisfied and look forward to my next trip.</p>
+               </div>
+            </div>
+            <div class="review">
+                <div class="heading">
+                    <div>
+                        <div class="rating">
+                            <img class="star" src="./assets/ratingStart.png">
+                            <img class="star" src="./assets/ratingStart.png">
+                            <img class="star" src="./assets/ratingStart.png">
+                            <img class="star" src="./assets/ratingStart.png">
+                            <img class="star" src="./assets/ratingStart.png">
+                        </div>
+                        <div class="customer-name">
+                            <h3>Praveen Kotwani</h3>
+                        </div>
+                    </div>
+                    <img src="./assets/noun-quote.png" alt="" style="height: 50px;">
+                </div>
+               <div class="review-content">
+                   <p>The unlimited kms plan works just like owning a car wherein there is no restriction to the kms I drive for, I usually go for this plan as my booking are for more than 24 hrs.</p>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <img class="logo" src="./assets/revvLogoWhite.png" alt="">
+                <div class="socials">
+                    <img src="./assets//socials/instagram.png" alt="">
+                    <img src="./assets//socials/facebook.png" alt="">
+                    <img src="./assets//socials/linkedin.png" alt="">
+                </div>
+            </div>
+            <div class="footer-center">
+                <a href="/">Home</a>
+                <a href="/">Subscriptions</a>
+                <a href="/">tariffs</a>
+                <a href="/">FAQs</a>
+                <a href="/">Policy</a>
+                <a href="/">Blog</a>
+            </div>
+            <div class="footer-right">
+                <h3>Have Questions</h3>
+                <p>24/7 Customer Support</p>
+                <h2>Customer Support</h2>
+                <a href="mailto:care@revv.co.in">care@revv.co.in</a>
+            </div>
+        </div>
+        <div class="copyright">
+           <p>Made by Abhishek Yadav</p>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

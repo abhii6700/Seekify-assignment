@@ -1,0 +1,754 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+}
+
+#container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HEADER */
+
+#header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 4rem;
+}
+
+#header-mobile {
+  display: none;
+}
+
+#header img {
+  height: 50px;
+}
+
+#header .options {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#header .options a button {
+  background-color: white;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border-width: 1px;
+  border-radius: 3px;
+}
+
+#header .options a button:hover {
+  color: #1daca3;
+  cursor: pointer;
+}
+
+#header .options a:hover {
+  color: #1daca3;
+  cursor: pointer;
+}
+
+#nav-mobile {
+  display: none;
+}
+
+/* HERO SECTION */
+
+#banner {
+  width: 100%;
+  height: 75vh;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner .banner-container {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#banner .banner-container .vector img {
+  height: 350px;
+}
+
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* RENTAL AND SUBSCRIPTION FORM */
+
+#rentals-and-subscriptions {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: -550px;
+  margin-left: -100px;
+}
+
+#rentals-and-subscriptions .selectors button {
+  padding: 1rem;
+  margin: 1rem;
+  width: 150px;
+  background-color: white;
+  border-width: 0.5px;
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: 600;
+}
+
+#rentals-and-subscriptions .selectors button:hover {
+  color: white;
+  background-color: #1daca3;
+  border: none;
+  cursor: pointer;
+}
+
+#rentals-and-subscriptions .title {
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#rentals-and-subscriptions #select-city-and-date {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+#rentals-and-subscriptions #select-city-and-date select {
+  width: 100%;
+  padding: 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#rentals-and-subscriptions #select-city-and-date label {
+  font-size: 12px;
+}
+
+#rentals-and-subscriptions #select-city-and-date input {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#rentals-and-subscriptions #select-city-and-date .search-button {
+  width: 100%;
+  padding: 8px;
+  background-color: #1daca3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#rentals-and-subscriptions #select-city-and-date .search-button:hover {
+  cursor: pointer;
+}
+
+/* SANITIZED AND SAFE CARS */
+
+#sanitized-and-safe-cars {
+  width: 70%;
+  margin: 2rem auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  background-color: white;
+  box-shadow: 10px 10px 10px 8px #88888811;
+}
+
+#sanitized-and-safe-cars .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#sanitized-and-safe-cars .title .button-container {
+  background-color: white;
+  box-shadow: 10px 10px 8px #88888811;
+}
+
+#sanitized-and-safe-cars .title button {
+  background: none;
+  padding: 3px;
+  border: none;
+  color: #c2c2c2;
+  font-size: 24px;
+}
+
+#sanitized-and-safe-cars .banners {
+  display: flex;
+  justify-content: space-between;
+}
+
+#sanitized-and-safe-cars .banner {
+  height: 125px;
+}
+
+/* FEATURED */
+
+#featured {
+  width: 70%;
+  margin: 2rem auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  background-color: white;
+  box-shadow: 10px 10px 10px 8px #88888811;
+}
+
+#featured .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#featured .title .button-container {
+  background-color: white;
+  box-shadow: 10px 10px 8px #88888811;
+}
+
+#featured .title button {
+  background: none;
+  padding: 3px;
+  border: none;
+  color: #c2c2c2;
+  font-size: 24px;
+}
+
+#featured .banners {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+#featured .banners::-webkit-scrollbar {
+  display: none;
+}
+
+#featured .banner {
+  height: 10rem;
+}
+
+/* HOW IT WORKS */
+
+#how-it-works {
+  width: 70%;
+  margin: 2rem auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#how-it-works .steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#how-it-works .steps .step {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+}
+
+#how-it-works .steps .step .description {
+  height: 100px;
+}
+
+#how-it-works .steps .step .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border: solid 5px;
+  border-radius: 50%;
+  border-color: #dddddd;
+  margin-bottom: 2rem;
+  box-shadow: rgb(0 0 0 / 25%) 0px 14px 45px, rgb(0 0 0 / 22%) 0px 10px 18px;
+}
+
+#how-it-works .steps .step .image-container:hover {
+  height: 110px;
+  width: 110px;
+  background-color: #1daca3;
+  cursor: pointer;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+#how-it-works .steps .step img {
+  height: 40px;
+}
+
+/* DOWNLOAD REVV */
+
+#download-revv {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  min-height: 70vh;
+  padding: 4rem;
+  background-image: url(./assets/backgroundDownloadRevvApp.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#download-revv .download-rev-content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#download-revv .download-rev-content-wrapper .available-on {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#download-revv .download-rev-content-wrapper .available-on img {
+  width: 300px;
+}
+
+/* OUR JOURNEY SO FAR */
+
+#achievements {
+  width: 70%;
+  margin: 2rem auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#achievements .achievements-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#achievements .achievements-container .img-container {
+  margin-bottom: 2rem;
+}
+
+/* TESTIMONIAL */
+
+#testimonial {
+  width: 70%;
+  margin: 2rem auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#testimonial .review {
+  padding: 2rem;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 10px 10px 10px 8px #88888811;
+}
+
+#testimonial .review .heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+#testimonial .review .rating {
+  margin-bottom: 0.5rem;
+}
+
+#testimonial .review .rating .star {
+  height: 1rem;
+}
+
+#testimonial .review {
+  display: none;
+}
+
+/* FOOTER */
+
+#footer {
+  background-color: #4a4e5a;
+}
+
+#footer .footer-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#footer .footer-container .footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+#footer .footer-container .footer-left .logo {
+  width: 80pxpx;
+}
+
+#footer .footer-container .footer-left .socials img {
+  height: 30px;
+  width: 30px;
+}
+#footer .footer-container .footer-left .socials {
+  display: flex;
+  gap: 1rem;
+}
+
+#footer .footer-container .footer-center {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#footer .footer-container .footer-center a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer .footer-container .footer-center a:hover {
+  color: #1daca3;
+}
+
+#footer .footer-container .footer-right {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 0.5rem;
+}
+
+#footer .footer-container .footer-right h2 {
+  color: #1daca3;
+}
+
+#footer .footer-container .footer-right a {
+  color: #1daca3;
+  text-decoration: none;
+}
+
+#footer .copyright {
+  width: 100%;
+  color: black;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* STYLES FOR MOBILE DEVICE */
+
+@media only screen and (max-width: 768px) {
+  #container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*HEADER*/
+
+  #header {
+    display: none;
+  }
+
+  #header-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px;
+    background-image: linear-gradient(
+      to left,
+      rgb(28, 171, 162),
+      rgb(28, 127, 171)
+    );
+  }
+  #header-mobile img {
+    height: 40px;
+  }
+  #header-mobile .open-menu img {
+    height: 30px;
+  }
+
+  /* NAVIGATION MENU */
+  #nav-mobile {
+    display: none;
+    height: 100vh;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #nav-mobile .login-or-signup {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    height: 5rem;
+    color: white;
+    background-image: linear-gradient(
+      to left,
+      rgb(28, 171, 162),
+      rgb(28, 127, 171)
+    );
+  }
+
+  #nav-mobile .options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 2rem;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  #nav-mobile .options a {
+    color: rgb(70, 70, 70);
+    text-decoration: none;
+  }
+
+  /* HERO SECTION */
+
+  #banner {
+    width: 100%;
+    height: 200px;
+  }
+
+  #banner .banner-container .vector img {
+    height: 150px;
+  }
+
+  /* RENTAL AND SUBSCRIPTION FORM */
+
+  #rentals-and-subscriptions {
+    padding: 0;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 50px auto;
+  }
+
+  #rentals-and-subscriptions .selectors {
+    display: flex;
+  }
+
+  /* SANITIZED AND SAFE CARS */
+
+  #sanitized-and-safe-cars {
+    width: 100%;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  #sanitized-and-safe-cars .title .button-container {
+    display: none;
+  }
+
+  #sanitized-and-safe-cars .banners {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    overflow-x: scroll;
+  }
+
+  #sanitized-and-safe-cars .banners::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* FEATURED */
+
+  #featured {
+    width: 100%;
+    padding: 1rem;
+    box-shadow: none;
+  }
+
+  #featured .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #featured .title .button-container {
+    display: none;
+  }
+
+  #featured .banner {
+    height: 125px;
+  }
+
+  /* HOW IT WORKS */
+
+  #how-it-works {
+    width: 100%;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+
+  #how-it-works .steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  #how-it-works .steps .step .image-container {
+    box-shadow: rgb(0 0 0 / 15%) 0px 14px 45px, rgb(0 0 0 / 22%) 0px 10px 18px;
+  }
+
+  /* DOWNLOAD REVV */
+
+  #download-revv {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem 1rem;
+  }
+
+  #download-revv .download-rev-content-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* OUR JOURNEY SO FAR */
+
+  #achievements {
+    width: 100%;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  #achievements .achievements-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #achievements .achievements-container .achievement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #achievements .achievements-container .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #achievements .achievements-container .img-container {
+    margin-bottom: 2rem;
+  }
+
+  /* TESTIMONIAL */
+
+  #testimonial {
+    width: 100%;
+    margin: 2rem auto;
+    padding: 1rem;
+    gap: 3rem;
+  }
+
+  #testimonial .review {
+    min-height: 500px;
+  }
+
+  /* FOOTER */
+
+  #footer .footer-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
